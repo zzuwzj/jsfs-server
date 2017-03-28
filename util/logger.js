@@ -3,5 +3,5 @@ const isDebug = true
 
 module.exports = {
   info: log,
-  debug: isDebug ? args => log(...args) : null
+  debug: isDebug ? args => log(args) : () => null
 }
